@@ -56,7 +56,7 @@ public class Espacial extends Plana{
     
     public void acessGeome(){
         System.out.println("Escolha qual calculo deseja fazer!");
-        System.out.println("Digite o número correspondente: 1 = Volume da esfera, 2 = Area da esfera, 3 = Volume da piramide, 4 = Volume do prisma, 5 = Volume do cilindro:");
+        System.out.println("Digite o número correspondente:\n 1 = Volume da esfera \n 2 = Area da esfera \n 3 = Volume da piramide \n 4 = Volume do prisma \n 5 = Volume do cilindro");
         ch = sc1.nextInt();
         System.out.println("\n");
         switch (ch) {
@@ -88,7 +88,7 @@ public class Espacial extends Plana{
     
     public void acessPlana(){
         System.out.println("Escolha qual cauculo deseja fazer:");
-        System.out.println("Digite o número correspondente: 1 = Quadrado, 2 = Circulo, 3 = Retangulo, 4 = Trapézio, 5 = Losangulo, 6 = Triangulo:");
+        System.out.println("Digite o número correspondente:\n 1 = Quadrado \n 2 = Circulo \n 3 = Retangulo \n 4 = Trapézio \n 5 = Losangulo \n 6 = Triangulo");
         ch = sc1.nextInt();
         System.out.println("\n");
         switch (ch) {

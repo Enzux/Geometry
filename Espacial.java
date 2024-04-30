@@ -36,6 +36,8 @@ public class Espacial extends Plana{
         System.out.println("///////Volume do cilindro///////");
         System.out.println("Digite o raio da base do cilindro:");
         r = sc1.nextFloat();
+        System.out.println("Digite a altura do cilindro:");
+        a = sc1.nextFloat();
         double Vcilindro = (r*r)*a*Math.PI;
         return (float)Vcilindro;
     }

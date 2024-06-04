@@ -1,6 +1,6 @@
 public class Espacial extends Plana{
     float r, AbP;
-    int ch;
+    int ch, ch1;
     
     public float esferaV(){
         System.out.println("///////Volume da esfera///////");
@@ -46,12 +46,12 @@ public class Espacial extends Plana{
     
     public void acessGe(){
         System.out.println("Digite o número correspondente: \n 1 = geometria plana \n 2 = geometria espacial");
-        ch = sc1.nextInt();
+        ch1 = sc1.nextInt();
         System.out.println("\n");
-        if (ch == 1) {
+        if (ch1 == 1) {
             acessPlana();
         }
-        if (ch == 2){
+        if (ch1 == 2){
             acessGeome();
         }
     }

@@ -1,9 +1,14 @@
 import java.util.Scanner;
 import java.lang.Math;
-public class Plana {
-    float a, b, r, B, d, D;
+
+
+
+public class Plana{
+    float a, b, r, B, d, D; 
+    String rForma;
     Scanner sc1 = new Scanner(System.in);
 
+    
     public float quadrado(){
         System.out.println("///////Area do quadrado///////");
         System.out.println("Digite o tamanho da aresta:");
@@ -19,6 +24,7 @@ public class Plana {
         return a*b;
     }
     public float circulo(){
+        rForma = "c";
         System.out.println("///////Area do circulo///////");
         System.out.println("Digite o raio do circulo:");
         r = sc1.nextFloat();
@@ -51,16 +57,14 @@ public class Plana {
         b = sc1.nextFloat();
         return (a*b)/2;
     }
-    public static void main(String[] args) {
-        Plana fp = new Plana();
+    
+    // renderiza o grafico das formar //
 
-        System.out.println("A area do quadrado é " + fp.quadrado() + "\n");
-        System.out.println("A area do retangulo é " + fp.retangulo() + "\n");
-        System.out.println("A area do circulo é " + fp.circulo() + "\n");
-        System.out.println("A area do trapezio é " + fp.trapezio() + "\n");
-        System.out.println("A area do triangulo é " + fp.triangulo() + "\n");
-        System.out.println("A area do losangulo é " + fp.losangulo() + "\n");
-    }
 
+    
+    
+    
+    
+    
 
 }

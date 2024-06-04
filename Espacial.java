@@ -18,7 +18,7 @@ public class Espacial extends Plana{
     }
     public float piramide(){
         System.out.println("///////Volume da piramide///////");
-        System.out.println("Digite a area da base do triangulo:");
+        System.out.println("Digite a area da base do piramide:");
         AbP = sc1.nextFloat();
         System.out.println("Digite a altura:");
         a = sc1.nextFloat();
@@ -45,7 +45,7 @@ public class Espacial extends Plana{
 /*//////////Metodos de acesso///////////*/
     
     public void acessGe(){
-        System.out.println("Digite 1 para geometria plana e 2 pra geometria espacial:");
+        System.out.println("Digite o número correspondente: \n 1 = geometria plana \n 2 = geometria espacial");
         ch = sc1.nextInt();
         System.out.println("\n");
         if (ch == 1) {
@@ -58,7 +58,7 @@ public class Espacial extends Plana{
     
     public void acessGeome(){
         System.out.println("Escolha qual calculo deseja fazer!");
-        System.out.println("Digite o número correspondente:\n 1 = Volume da esfera \n 2 = Area da esfera \n 3 = Volume da piramide \n 4 = Volume do prisma \n 5 = Volume do cilindro");
+        System.out.println("Digite o número correspondente:\n 1 = Volume da esfera \n 2 = Area da esfera \n 3 = Volume da piramide \n 4 = Volume do prisma \n 5 = Volume do cilindro \n 6 = voltar");
         ch = sc1.nextInt();
         System.out.println("\n");
         switch (ch) {
@@ -77,25 +77,29 @@ public class Espacial extends Plana{
             case 5:
                 System.out.println("O volume do cilindro é " + cilindro() + "\n");
             break;
+            case 6:
+                acessGe();
+            break;
         }
-        System.out.println("Digite 1 para sair e 2 pra continuar:");
+        System.out.println("Digite 1 para continuar e 2 pra sair:");
         ch = sc1.nextInt();
+        System.out.println("\n");
         if (ch == 1) {
-            System.out.println("Obrigado por usar nosso programa!");
+            acessGe();
         }
         if (ch == 2){
-            acessGe();
+            System.out.println("Obrigado por usar nosso programa!");
         }
     }
     
     public void acessPlana(){
         System.out.println("Escolha qual cauculo deseja fazer:");
-        System.out.println("Digite o número correspondente:\n 1 = Quadrado \n 2 = Circulo \n 3 = Retangulo \n 4 = Trapézio \n 5 = Losangulo \n 6 = Triangulo");
+        System.out.println("Digite o número correspondente:\n 1 = Quadrado \n 2 = Circulo \n 3 = Retangulo \n 4 = Trapézio \n 5 = Losangulo \n 6 = Triangulo \n 7 = voltar");
         ch = sc1.nextInt();
         System.out.println("\n");
         switch (ch) {
             case 1:
-                System.out.println("A area do quadrado é " + quadrado() + "\n");            
+                System.out.println("A area do quadrado é " + quadrado() + "\n");     
             break;
             case 2:
                 System.out.println("A area do circulo é " + circulo() + "\n");
@@ -112,15 +116,18 @@ public class Espacial extends Plana{
             case 6:
                 System.out.println("A area do triangulo é " + triangulo() + "\n");
             break;
+            case 7:
+                acessGe();
+            break;
         }
-        System.out.println("Digite 1 para sair e 2 pra continuar:");
+        System.out.println("Digite 1 para continuar e 2 pra sair:");
         ch = sc1.nextInt();
         System.out.println("\n");
         if (ch == 1) {
-            System.out.println("Obrigado por usar nosso programa!");
+            acessGe();
         }
         if (ch == 2){
-            acessGe();
+            System.out.println("Obrigado por usar nosso programa!");
         }
     }
     
